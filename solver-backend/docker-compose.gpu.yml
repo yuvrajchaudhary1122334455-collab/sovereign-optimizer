@@ -1,0 +1,10 @@
+services:
+  solver-backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SOLVER_MODE: gpu
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:5173}
+    gpus: all
+    restart: unless-stopped

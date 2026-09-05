@@ -1,0 +1,12 @@
+{
+  "sense": "maximize",
+  "variables": {
+    "x": {"type": "continuous", "lower": 0, "upper": null},
+    "y": {"type": "continuous", "lower": 0, "upper": null}
+  },
+  "objective": {"x": 3, "y": 5},
+  "constraints": [
+    {"x": 2, "y": 1, "relation": "<=", "limit": 10},
+    {"x": 1, "y": 3, "relation": "<=", "limit": 15}
+  ]
+}
